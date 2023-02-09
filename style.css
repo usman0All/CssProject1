@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.heading{
+    margin-top: 15px;
+    margin-left: 50px;
+}
+#list{
+    color: rgb(10, 146, 200);
+}
+.parent{
+    background-color:whitesmoke;
+    
+    margin:30px;
+    width: 1200px;
+    height: 800px;
+}
+#btn-float{
+    float: right;
+    width: 180px;
+    height: 50px;
+    padding: 10px;
+    font-size: larger;
+    font-weight:bolder;
+    margin-right: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+#btn{
+    background-color: skyblue;
+    border:none;
+    color: white;
+    padding: 10px;
+    font-weight:bolder;
+    font-size: larger;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+}
+.subparent{
+    clear: both;
+    margin-top: 50px;
+    width: 1197px;
+    height: 693px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:start;
+   
+}
+.child{
+    width:250px;
+    height:200px;
+    margin: 30px;
+    background-color:white;
+    padding: 30px;
+
+}
+.child:hover{
+    box-shadow: -2px -2px 5px black;
+}
+.headinh3{
+    color: skyblue;
+    text-align: center;
+    font-weight: bolder;
+    font-size: large;
+}
+.child .hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: grey;
+    width:100%;
+
+}
+.addTaskbox{
+    width: 400px;
+    height:160px;
+    background-color: red;
+    background-color: white;
+    position: absolute;
+    top:35%;
+    left:34%;
+    padding-top:30px;
+    border-radius: 5px; 
+}

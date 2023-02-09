@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body style=" background: rgba(0, 0, 0, 0.5)">
+    <div class="addTaskbox">
+        <h3 style="float:left;margin-left: 5px">Add New Item</h3>
+        <button style="float:right;padding:5px;margin-right: 3px;margin-bottom: 3px;border:none;background-color: white"><a href="./index.html" style="text-decoration:none;font-size: large;font-weight: bold;">X</a></button>
+        <hr style="color:grey;clear:both;margin-bottom: 5px;"/>
+        <p style="height:30px;background-color:whitesmoke;border-radius:3px;padding:10px;margin: 10px;">Learn c++</p>
+        <button style="background-color: skyblue;color:white;border:none;padding: 5px;position:absolute;right:5px;margin-top:10px;"><a href="./addTask.html" style="text-decoration: none;color:white;padding:5px;">+</a>Add Task</button>
+    </div>
+    <h1 class="heading"><span id="task">Tasks </span><span id="list">List</span></h1>
+    <div class="parent" style=" background: rgba(0, 0, 0, 0.5)">
+        <div id="btn-float"  style="float:left; margin-left: 100px;"><button id="btn" style="background-color: black;"><a href="./addNewTask.html" target="_self" style="text-decoration: none;color: white;">---</a></button>Back</div>
+        <div id="btn-float" style="margin-right:100px"><button id="btn"><a href="" target="_self" style="text-decoration: none;color: white;">+</a></button>Add New Task</div>
+        
+        <div class="subparent" style="justify-content:center;align-items:stretch; background: rgba(0, 0, 0, 0.5)";  >
+            <div class="child" style="width: 400px;height: 200px;background: rgba(0, 0, 0, 0.5);">
+                <h3 class="headinh3">Trip to paris</h3>
+                <hr class="hr">
+                <input type="checkbox" checked id="cb1" >
+                <label for="bb1" style="text-decoration: line-through;color: grey">Visit church</label>
+                <br>
+                <br>
+                <input type="checkbox"id="cb2">
+                <label for="bb1">Shopping</label>
+            </div>
+        </div>    
+    </div>
+    
+</body>
+</html>
