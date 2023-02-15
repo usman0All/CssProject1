@@ -5,27 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do App</title>
-    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-    <h1 class="heading"><span id="task">Tasks </span><span id="list">List</span></h1>
-    <div class="parent">
-        <div id="btn-float"  style="float:left; margin-left: 100px;"><button id="btn" style="background-color: black;"><a href="./addNewTask1.html" target="_self" style="text-decoration: none;color: white;">---</a></button>Back</div>
-        <div id="btn-float" style="margin-right:100px"><button id="btn"><a href="./addNewTask2.html" target="_self" style="text-decoration: none;color: white;">+</a></button>Add New Task</div>
-        
-        <div class="subparent" style="justify-content:center;align-items:stretch;">
-            <div class="child" style="width: 400px;height: 200px">
-                <h3 class="headinh3">Trip to paris</h3>
-                <hr class="hr">
-                <input type="checkbox" checked id="cb1" >
-                <label for="bb1" style="text-decoration: line-through;color: grey">Visit church</label>
-                <br>
-                <br>
-                <input type="checkbox"id="cb2">
-                <label for="bb1">Shopping</label>
+   <div>
+            <!--header start-->
+            <div>
+                <h1 class="header"><span class="task">Tasks&nbsp;</span><span id="list" class="task">List</span></h1>
             </div>
-        </div>    
+            <!--header end-->
+             <!--parent start-->
+       <div class="parent-container">
+                <div id="btn-container">
+
+                   <div class="plus-btn"><button id="plus-btn"><a href="./addNewTask2.html">+</a></button>Add New Task</div> 
+                   <div class="back-btn"><button id="back-btn"><a href="./index.html">x---</a></button>Back</div>
+                </div>
+                <!--subparent-->
+                <div class="subparent" id="subparent">
+                    <div class="child" id="child1">
+                        <h3 class="headinh3">Trip to paris</h3>
+                        <hr class="hr">
+                        <input type="checkbox" checked id="cb1">
+                        <label for="cb1" style="text-decoration: line-through;color: grey">Visit church</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="cb2">
+                        <label for="cb2">Shopping</label>
+                    </div>
+                <!--subparent end-->
+        </div>
+        <!--parent end-->
     </div>
-    
+
 </body>
-</html>
+</htm>

@@ -4,76 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Add the Item</title>
-    <link rel="stylesheet" href="./style.css"/>
+    <title>To Do App</title>
+    <link rel="stylesheet" href="./style.css" />
 </head>
-<body style=" background: rgba(0, 0, 0, 0.5)">
-    <div class="addTaskbox">
-        <h3 style="float:left;margin-left: 5px">Add New Item</h3>
-        <button style="float:right;padding:5px;margin-right: 3px;margin-bottom: 3px;border:none;background-color: white"><a href="./index.html" style="text-decoration:none;font-size: large;font-weight: bold;">X</a></button>
-        <hr style="color:grey;clear:both;margin-bottom: 5px;"/>
-        <p style="height:30px;background-color:whitesmoke;border-radius:3px;padding:10px;margin: 10px;">Learn c++</p>
-        <button style="background-color: skyblue;color:white;border:none;padding: 5px;position:absolute;right:5px;margin-top:10px;"><a href="./addTask.html" style="text-decoration: none;color:white;padding:5px;">+</a>Add Task</button>
+<body>
+    <div class="dialogbox">
+      <div class="addTaskbox">
+        <h3 class="AddItem">Add New Item</h3>
+        <button class="button-x"><a href="./index.html">X</a></button>
+        <hr/>
+        <p>Learn c++</p>
+        <button class="button-plus"><a href="./addTask.html">+</a>Add Task</button>
+        </div>
     </div>
-    <h1 class="heading"><span id="task">Tasks </span><span id="list">List</span></h1>
-    <div class="parent" style=" background: rgba(0, 0, 0, 0.5)">
-        <div id="btn-float"><button id="btn"><a href="add.html" target="_blank" style="text-decoration: none;color: white;">+</a></button>Add New Task</div>
-        <div class="subparent">
-            <div class="child"  style=" background: rgba(0, 0, 0, 0.5)">
-                <h3 class="headinh3">Trip to paris</h3>
-                <hr class="hr">
-                <input type="checkbox" checked id="cb1" >
-                <label for="bb1" style="text-decoration: line-through;color: grey">Visit church</label>
-                <br>
-                <br>
-                <input type="checkbox"id="cb2">
-                <label for="bb1">Shopping</label>
+   <div class="filter">
+            <!--header start-->
+            <div>
+                <h1 class="header"><span class="task">Tasks&nbsp;</span><span id="list" class="task">List</span></h1>
             </div>
-            <div class="child"  style=" background: rgba(0, 0, 0, 0.5)">
-                <h3 class="headinh3">My To Do List</h3>
-                <hr class="hr">
-                <input type="checkbox" checked id="cb1" />
-                <label for="bb1" style="text-decoration: line-through;color: grey;">Visit Super Market</label>
-                <br>
-                <br>
-                <input type="checkbox"id="cb2">
-                <label for="bb1">Buy Vegitable</label>
-            </div>
-            <div class="child" style=" background: rgba(0, 0, 0, 0.5)">
-                <h3 class="headinh3">Movie i will watch</h3>
-                <hr class="hr">
-                <input type="checkbox" checked id="cb1"/>
-                <label for="bb1" style="text-decoration: line-through;color: grey;">Stranger Things 4</label>
-                <br>
-                <br>
-                <input type="checkbox"id="cb2">
-                <label for="bb1">Avenger Endgame</label>
-            </div>
-            <div class="child"  style=" background: rgba(0, 0, 0, 0.5)">
-                <h3 class="headinh3">Daily Morning Routine For</h3>
-                <hr class="hr">
-                <input type="checkbox" checked id="cb1">
-                <label for="bb1" style="text-decoration: line-through;color: grey;">Wake Up at 6 AM.</label>
-                <br>
-                <br>
-                <input type="checkbox"id="cb2">
-                <label for="bb1">Sleep at 10 PM.</label>
-            </div>
-            <div class="child"  style=" background: rgba(0, 0, 0, 0.5)">
-                <h3 class="headinh3">Book to read</h3>
-                <hr class="hr">
-                <input type="checkbox" checked id="cb1">
-                <label for="bb1" style="text-decoration: line-through;color: grey;">Design of Everyday</label>
-                <br>
-                <br>
-                <input type="checkbox"id="cb2">
-                <label for="bb1">Alchemist</label>
-            </div>
-        </div>    
+            <!--header end-->
+             <!--parent start-->
+       <div class="parent-container">
+                    <div id="btn-container">
+                        <div class="btn"><button id="plus-btn"><a href="./addNewTask1.html">+</a></button>Add New Task</div>
+                     </div>
+                <!--subparent-->
+                <div class="subparent">
+                    <div class="child">
+                        <h3 class="headinh3">Trip to paris</h3>
+                        <hr class="hr">
+                        <input type="checkbox" checked id="cb1">
+                        <label for="cb1" style="text-decoration: line-through;color: grey">Visit church</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="cb2">
+                        <label for="cb2">Shopping</label>
+                    </div>
+                    <div class="child">
+                        <h3 class="headinh3">My To Do List</h3>
+                        <hr class="hr">
+                        <input type="checkbox" checked id="cb1" />
+                        <label for="bb1" style="text-decoration: line-through;color: grey;">Visit Super Market</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="cb2">
+                        <label for="bb1">Buy Vegitable</label>
+                    </div>
+                    <div class="child">
+                        <h3 class="headinh3">Movie i will watch</h3>
+                        <hr class="hr">
+                        <input type="checkbox" checked id="cb1" />
+                        <label for="bb1" style="text-decoration: line-through;color: grey;">Stranger Things 4</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="cb2">
+                        <label for="bb1">Avenger Endgame</label>
+                    </div>
+                    <div class="child">
+                        <h3 class="headinh3">Daily Morning Routine For</h3>
+                        <hr class="hr">
+                        <input type="checkbox" checked id="cb1">
+                        <label for="bb1" style="text-decoration: line-through;color: grey;">Wake Up at 6 AM.</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="cb2">
+                        <label for="bb1">Sleep at 10 PM.</label>
+                    </div>
+                    <div class="child">
+                        <h3 class="headinh3">Book to read</h3>
+                        <hr class="hr">
+                        <input type="checkbox" checked id="cb1">
+                        <label for="bb1" style="text-decoration: line-through;color: grey;">Design of Everyday</label>
+                        <br>
+                        <br>
+                        <input type="checkbox" id="cb2">
+                        <label for="bb1">Alchemist</label>
+                    </div>
+                </div>
+                <!--subparent end-->
+        </div>
+        <!--parent end-->
     </div>
-    
+
 </body>
-</html>
-    
-</body>
-</html>
+</htm>

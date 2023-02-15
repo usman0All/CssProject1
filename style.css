@@ -1,66 +1,112 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
-.heading{
-    margin-top: 15px;
-    margin-left: 30px;
+.header{
+    margin-top: 20px;
+    margin-left: 80px;
+}
+.header .task{
+    font-weight:bolder;
+    font-size:larger;
 }
 #list{
     color: rgb(10, 146, 200);
 }
-.parent{
-    background-color:whitesmoke;
-    
-    margin:30px;
-    width: 1200px;
+.parent-container{
+    background-color:rgb(249, 246, 246);
+    width:1200px;
     height: 800px;
 }
-#btn-float{
-    float: right;
-    width: 180px;
-    height: 50px;
-    padding: 10px;
-    font-size: larger;
-    font-weight:bolder;
-    margin-right: 30px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-
+.filter{
+    background-color: white;
+    margin: 10px;
+    filter: brightness(0.5);
 }
-#btn{
-    background-color: skyblue;
-    border:none;
-    color: white;
+/* button code */
+.btn-container{
+    text-decoration: none;
+    height: 100px;
+    font-size:25px;
     padding: 10px;
-    font-weight:bolder;
-    font-size: larger;
-    margin-right: 5px;
+    font-weight: bold;
+    color:black;
+    margin-right: 50px;
+    margin-top: 40px;
+}
+
+#plus-btn{
+    background-color:rgb(10, 146, 200);
+    border: none;
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    margin-right: 10px;
+}
+#plus-btn a{
+    font-size:40px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.plus-btn{
+    float: right;
+    margin-right:25%;
+}
+#back-btn{
+    background-color:black;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
 
 }
+#back-btn a{
+    font-size:40px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+.back-btn{
+    float:left;
+    margin-left:25%;
+}
+/* button code */
 .subparent{
     clear: both;
-    margin-top: 50px;
     width: 1197px;
     height: 693px;
     display: flex;
     flex-wrap: wrap;
-    justify-content:start;
-   
+    align-content: baseline;
+    padding: 70px;
+}
+#subparent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
 }
 .child{
-    width:250px;
-    height:200px;
-    margin: 30px;
+    width:300px;
+    height:250px;
     background-color:white;
-    padding: 30px;
-
+    padding-top:15px;
+    border-radius:10px;
+    margin: 10px;
 }
 .child:hover{
     box-shadow: -2px -2px 5px black;
+}
+#child1{
+    width:400px;
+    height:300px;
+
 }
 .headinh3{
     color: skyblue;
@@ -71,18 +117,71 @@
 .child .hr{
     margin-top: 10px;
     margin-bottom: 10px;
-    background-color: grey;
+    color:grey;
     width:100%;
-
 }
-.addTaskbox{
-    width: 400px;
-    height:160px;
-    background-color: red;
-    background-color: white;
+.dialogbox{
     position: absolute;
     top:35%;
     left:34%;
+    z-index: 1;
+
+
+}
+.addTaskbox{
+    z-index:auto;
+    border:10px solid grey;
+    background-color:white;
+    width: 400px;
+    height:200px;
+    position: relative;
     padding-top:30px;
     border-radius: 5px; 
 }
+.AddItem{
+    float:left;
+    margin-left: 5px;
+}
+.btn{
+    float: right;
+}
+.button-x{
+    float:right;
+    padding:5px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    border:none;
+    background-color:white;
+}
+.button-x a{
+    text-decoration:none;
+    font-size: large;
+    font-weight: bold;
+}
+.addTaskbox hr{
+    color:grey;
+    clear:both;
+    margin-bottom: 5px;
+}
+.addTaskbox p{
+    height:30px;
+    background-color:whitesmoke;
+    border-radius:3px;
+    padding:10px;
+    margin: 10px;
+}
+.addTaskbox .button-plus{
+    background-color: skyblue;
+    color:white;
+    border:none;
+    padding: 5px;
+    position:absolute;
+    right:5px;
+    margin-top:10px;
+}
+.addTaskbox .button-plus a{
+    text-decoration: none;
+    color:white;
+    padding:5px;
+}
+
