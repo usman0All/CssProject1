@@ -16,8 +16,11 @@
 }
 .parent-container{
     background-color:rgb(249, 246, 246);
+    /* width:1200px; */
     width:1200px;
+    margin-left: 70px;
     height: 800px;
+    /* border: 3px solid blue; */
 }
 .filter{
     background-color: white;
@@ -83,7 +86,10 @@
     display: flex;
     flex-wrap: wrap;
     align-content: baseline;
-    padding: 70px;
+    /* padding: 70px; */
+    padding-top: 30px;
+    padding-left: 110px;
+    /* border:3px solid red; */
 }
 #subparent{
     display: flex;
